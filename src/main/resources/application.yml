@@ -1,0 +1,15 @@
+server:
+  port: 9002
+  shutdown: graceful
+  netty:
+    # How long to wait for a TCP connection to be established with the server
+    connection-timeout: 2s
+    # How long to wait before closing a TCP connection if no data is transferred
+    idle-timeout: 15s
+
+spring:
+  application:
+    name: order-service
+  lifecycle:
+    # 15 s grace period
+    timeout-per-shutdown-phase: 15s
