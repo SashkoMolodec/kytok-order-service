@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "kytok.vinyl-service.uri",
+      "type": "java.lang.String",
+      "description": "URI to access vinyl-service."
+    },
+    {
+      "name": "kytok.vinyl-service.timeout",
+      "type": "java.lang.String",
+      "description": "Timeout for vinyl-service requests."
+    },
+    {
+      "name": "kytok.vinyl-service.retry-initial-backoff",
+      "type": "java.lang.String",
+      "description": "Initial backoff when retrying request."
+    },
+    {
+      "name": "kytok.vinyl-service.retry-max-attempts",
+      "type": "java.lang.String",
+      "description": "Max attempts when retrying request."
+    }
+  ]
+}
