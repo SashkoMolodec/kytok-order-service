@@ -1,22 +1,22 @@
 {
   "properties": [
     {
-      "name": "kytok.vinyl-service.uri",
+      "name": "kytok.catalog-service.uri",
       "type": "java.lang.String",
-      "description": "URI to access vinyl-service."
+      "description": "URI to access catalog-service."
     },
     {
-      "name": "kytok.vinyl-service.timeout",
+      "name": "kytok.catalog-service.timeout",
       "type": "java.lang.String",
-      "description": "Timeout for vinyl-service requests."
+      "description": "Timeout for catalog-service requests."
     },
     {
-      "name": "kytok.vinyl-service.retry-initial-backoff",
+      "name": "kytok.catalog-service.retry-initial-backoff",
       "type": "java.lang.String",
       "description": "Initial backoff when retrying request."
     },
     {
-      "name": "kytok.vinyl-service.retry-max-attempts",
+      "name": "kytok.catalog-service.retry-max-attempts",
       "type": "java.lang.String",
       "description": "Max attempts when retrying request."
     }

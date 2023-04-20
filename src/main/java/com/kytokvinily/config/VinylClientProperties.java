@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import java.net.URI;
 import java.time.Duration;
 
-@ConfigurationProperties("kytok.vinyl-service")
+@ConfigurationProperties("kytok.catalog-service")
 public record VinylClientProperties(
         @NotNull URI uri,
         @NotNull Duration timeout,
