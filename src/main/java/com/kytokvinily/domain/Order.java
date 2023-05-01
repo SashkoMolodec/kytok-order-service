@@ -1,9 +1,6 @@
 package com.kytokvinily.domain;
 
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.annotation.Version;
+import org.springframework.data.annotation.*;
 import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.Instant;
@@ -23,12 +20,16 @@ public record Order(
         Instant createdDate,
         @LastModifiedDate
         Instant lastModifiedDate,
+        @CreatedBy
+        String createdBy,
+        @LastModifiedBy
+        String lastModifiedBy,
         @Version
         int version
 ) {
     public static Order of(
             Long vinylId, String vinylTitle, String vinylAuthor, Double vinylPrice, Integer quantity, OrderStatus orderStatus
     ) {
-        return new Order(null, vinylId, vinylTitle, vinylAuthor, vinylPrice, quantity, orderStatus, null, null, 0);
+        return new Order(null, vinylId, vinylTitle, vinylAuthor, vinylPrice, quantity, orderStatus, null, null, null, null, 0);
     }
 }
